@@ -6,10 +6,11 @@ import io.restassured.specification.RequestSpecification;
 
 import static net.thucydides.core.util.SystemEnvironmentVariables.createEnvironmentVariables;
 
-public abstract class AbstractRestClient {
+public class DefaultRestClient {
     private static final String BASE_URL = createEnvironmentVariables().getProperty("base.url");
 
-    protected RequestSpecification buildAbstractRequestSpec() {
+    protected RequestSpecification buildDefaultRequestSpec() {
         return new RequestSpecBuilder().setBaseUri(BASE_URL).setContentType(ContentType.JSON).build();
     }
 }
+
