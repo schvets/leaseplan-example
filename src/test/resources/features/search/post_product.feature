@@ -6,7 +6,7 @@ Feature: Search for the product
 
   Scenario Outline: Verify search product request (positive flow)
     Given user perform search request for <productName>
-    Then user should get 202 response code
+    Then user should get 200 response code
     And response should return at least 1 PRODUCT entity
 
     Examples:
