@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Search for the product","Verify search product request (positive flow)","SUCCESS","2022-01-27T10:13:37.22Z[Etc/UTC]","0.0","7.96"
-"Search for the product","Verify search product request (negative flow - unavailable item)","SUCCESS","2022-01-27T10:13:45.196Z[Etc/UTC]","0.0","1.11"
-"Search for the product","Verify search product request (negative flow - wrong search param)","SUCCESS","2022-01-27T10:13:46.306Z[Etc/UTC]","0.0","0.65"
+"Search for the product","Verify search product request (positive flow)","SUCCESS","2022-01-27T10:19:06.544Z[Etc/UTC]","0.0","7.91"
+"Search for the product","Verify search product request (negative flow - unavailable item)","SUCCESS","2022-01-27T10:19:14.473Z[Etc/UTC]","0.0","0.88"
+"Search for the product","Verify search product request (negative flow - wrong search param)","SUCCESS","2022-01-27T10:19:15.36Z[Etc/UTC]","0.0","0.47"
