@@ -4,10 +4,37 @@ Feature: Search for the product
 ### Available products: "apple", "mango", "tofu", "water"
 ### Prepare Positive and negative scenarios
 
-  Scenario:
-    When he calls endpoint "https://waarkoop-server.herokuapp.com/api/v1/search/test/apple"
-    Then he sees the results displayed for apple
-    When he calls endpoint "https://waarkoop-server.herokuapp.com/api/v1/search/test/mango"
-    Then he sees the results displayed for mango
-    When he calls endpoint "https://waarkoop-server.herokuapp.com/api/v1/search/test/car"
-    Then he doesn not see the results
+  Scenario Outline: Verify search product request (positive flow)
+    Given user perform search request for <productName>
+    Then user should get 200 response code
+    And response should return at least 1 PRODUCT entity
+
+    Examples:
+      | productName |
+      | apple       |
+      | mango       |
+      | tofu        |
+      | water       |
+
+
+  Scenario Outline: Verify search product request (negative flow - unavailable item)
+    Given user perform search request for <productName>
+    Then user should get 404 response code
+    And user should get ERROR with data:
+      | error | message   | requested_item   | served_by            |
+      | true  | Not found | <productName> | https://waarkoop.com |
+
+    Examples:
+      | productName |
+      | car              |
+      | test             |
+
+
+  Scenario Outline: Verify search product request (negative flow - wrong search param)
+    Given user perform search request for <productName>
+    Then user should get 401 response code
+    And user should get ERROR with data with message "Not authenticated"
+
+    Examples:
+      | productName |
+      |             |

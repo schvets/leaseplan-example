@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search for the product","Verify search product request (positive flow)","SUCCESS","2022-01-27T11:34:57.322+02:00[Europe/Kiev]","0.0","6.95"
+"Search for the product","Verify search product request (negative flow - unavailable item)","SUCCESS","2022-01-27T11:35:04.273+02:00[Europe/Kiev]","0.0","0.8"
+"Search for the product","Verify search product request (negative flow - wrong search param)","SUCCESS","2022-01-27T11:35:05.079+02:00[Europe/Kiev]","0.0","0.48"
