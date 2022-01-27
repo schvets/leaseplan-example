@@ -51,7 +51,6 @@ After successful test run you will see short console report
 And link to more detailed local report 
 
 ![img_1.png](img_1.png)
-how to install, run and write new tests
 
 ## How run project tests remotely 
 Project integrated with GitHub Actions and GitlabCi remote runners
