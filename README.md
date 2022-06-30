@@ -63,7 +63,7 @@ Project integrated with GitHub Actions and GitlabCi remote runners
 5) on left side in "Job artifact" section press "Browse" button => open "report" folder => find "index.html" file and click 
 6) generated test report should be open 
 
-Example of already generated test report you can find by [**link**](https://schvets.a.gitlab.io/-/leaseplan/-/jobs/2025307503/artifacts/reports/index.html)
+Example of already generated test report you can find by [**link**](https://schvets.a.gitlab.io/-/leaseplan/-/jobs/2660711991/artifacts/reports/index.html)
 
 ###For running project remotely on GitHub:
 1) navigate to [**Github**](https://github.com/schvets/leaseplan-example.git) click on "Action" tab
